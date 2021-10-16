@@ -4,6 +4,7 @@
   <arg name="rviz_required" default="true" />
   <!-- mouse joy key none -->
   <arg name="teleop" default="key" />
+  <arg name="joy_dev" default="/dev/input/js1" />
 
   <arg name="xmin" default="-5"/>
   <arg name="xmax" default="5"/>
@@ -15,6 +16,7 @@
     <arg name="rviz_conf" value="$(arg rviz_conf)" />
     <arg name="rviz_required" value="$(arg rviz_required)" />
     <arg name="teleop" value="$(arg teleop)" />
+    <arg name="joy_dev" value="$(arg joy_dev)" />
   </include>
 
   <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
