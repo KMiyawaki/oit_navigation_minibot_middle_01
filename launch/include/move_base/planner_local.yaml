@@ -2,7 +2,7 @@ DWAPlannerROS:
   max_vel_trans: 0.4
   min_vel_trans: 0.0
   max_vel_x: 0.4
-  min_vel_x: -0.1
+  min_vel_x: -0.05
   max_vel_y: 0.0
   min_vel_y: 0.0
   max_vel_theta: deg(40)
@@ -19,8 +19,8 @@ DWAPlannerROS:
   sim_time: 3
   sim_granularity: 0.2
   angular_sim_granularity: 0.1
-  path_distance_bias: 8 # 0.8
-  goal_distance_bias: 3 # 0.6
+  path_distance_bias: 10 # 0.8
+  goal_distance_bias: 1 # 0.6
   occdist_scale: 0.01
   twirling_scale: 0.0
   stop_time_buffer: 0.2
