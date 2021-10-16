@@ -1,0 +1,12 @@
+<launch>
+  <arg name="node_name" default="urg_node"/>
+  <arg name="urg_scan_topic" default="/scan"/>
+  <arg name="serial_port" default="/dev/serial/by-id/usb-Hokuyo_Data_Flex_for_USB_URG-Series_USB_Driver-if00"/>
+  <arg name="frame_id" default="base_laser_link"/>
+  
+  <node name="$(arg node_name)" pkg="urg_node" type="urg_node" output="screen" respawn="false">
+    <remap from="/scan" to="$(arg urg_scan_topic)" />
+    <param name="frame_id" value="$(arg frame_id)" />
+    <param name="serial_port" value="$(arg serial_port)" />
+  </node>
+</launch>

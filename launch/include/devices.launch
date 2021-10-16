@@ -1,13 +1,13 @@
 <launch>
-  <arg name="ydlidar_port" default="/dev/ydlidar"/>
+  <arg name="urg_port" default="/dev/serial/by-id/usb-Hokuyo_Data_Flex_for_USB_URG-Series_USB_Driver-if00"/>
   <arg name="use_rviz" default="false" />
   <arg name="rviz_conf" default="$(find oit_navigation_minibot_middle_01)/config/rviz/simple.rviz" />
   <arg name="rviz_required" default="true" />
 
   <include file="$(find oit_navigation_minibot_middle_01)/launch/include/roboclaw.launch"/>
 
-  <include file="$(find oit_navigation_minibot_middle_01)/launch/include/ydlidar.launch">
-    <param name="port" type="string" value="$(arg ydlidar_port)"/>
+  <include file="$(find oit_navigation_minibot_middle_01)/launch/include/simple_urg.launch">
+    <param name="serial_port" type="string" value="$(arg urg_port)"/>
   </include>
 
   <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter" output="screen">
