@@ -1,4 +1,4 @@
-# Minibot light
+# Minibot middle
 
 演習用小型ロボットの説明。
 
