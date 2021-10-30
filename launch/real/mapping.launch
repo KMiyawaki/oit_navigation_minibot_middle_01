@@ -25,5 +25,9 @@
     <param name="xmax" value="$(arg xmax)" />
     <param name="ymin" value="$(arg ymin)" />
     <param name="ymax" value="$(arg ymax)" />
+    <param name="linearUpdate" value="0.05"/>
+    <param name="angularUpdate" value="$(eval 2.0 / 180.0 * 3.1415)"/>
+    <param name="map_update_interval" value="0.1" />
+    <param name="delta" value="0.01" />
   </node>
 </launch>

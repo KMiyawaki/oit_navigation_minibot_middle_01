@@ -2,7 +2,7 @@ DWAPlannerROS:
   max_vel_trans: 0.4
   min_vel_trans: 0.0
   max_vel_x: 0.4
-  min_vel_x: -0.05
+  min_vel_x: -0.01
   max_vel_y: 0.0
   min_vel_y: 0.0
   max_vel_theta: deg(40)
@@ -12,8 +12,8 @@ DWAPlannerROS:
   acc_lim_theta: deg(80)
   acc_lim_trans: 0.1
   prune_plan: true
-  xy_goal_tolerance: 0.2
-  yaw_goal_tolerance: deg(20)
+  xy_goal_tolerance: 0.01
+  yaw_goal_tolerance: deg(2.5)
   trans_stopped_vel: 0.1
   theta_stopped_vel: 0.0
   sim_time: 3
