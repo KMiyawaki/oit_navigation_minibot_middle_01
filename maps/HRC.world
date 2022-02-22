@@ -17,8 +17,8 @@ window
 floorplan
 (
   bitmap "./HRC_border.png"
-  size [102.90 101.30 1.5]
-  pose [46.45 45.65 0 0 0]
+  size [20.580000 20.260000 1.5]
+  pose [5.29 5.13 0 0 0]
 )
 
 robot
