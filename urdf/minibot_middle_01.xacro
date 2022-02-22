@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="minibot_middle_01">
-  <xacro:property name="body_d" value="0.205" />
-  <xacro:property name="body_w" value="0.285" />
-  <xacro:property name="body_h" value="0.1703" />
-  <xacro:property name="body_offset_x" value="-0.045" />
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="minibot_light_01">
+  <xacro:property name="body_d" value="0.315" />
+  <xacro:property name="body_w" value="0.2423" />
+  <xacro:property name="body_h" value="0.162" />
+  <xacro:property name="body_offset_x" value="${0.07-body_d/2}" />
   <xacro:property name="body_offset_z" value="${body_h/2}" />
 
   <link name="base_link">

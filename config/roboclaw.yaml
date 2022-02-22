@@ -12,6 +12,6 @@ serial_0 :
         address : 128
         serial_interval_after_write : 0.000
         serial_interval_after_read : 0.000
-        motor_index_of_connector_M1 : 1 # Left Wheel index should be 0.
-        motor_index_of_connector_M2 : 0 # Right Wheel index should be 1.
+        motor_index_of_connector_M1 : 1 # Right Wheel index should be 1.
+        motor_index_of_connector_M2 : 0 # Left Wheel index should be 0.
         

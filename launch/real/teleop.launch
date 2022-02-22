@@ -3,8 +3,8 @@
   <arg name="rviz_conf" default="$(find oit_navigation_minibot_middle_01)/config/rviz/simple.rviz" />
   <arg name="rviz_required" default="true" />
   <!-- mouse joy key none -->
-  <arg name="teleop" default="key" />
-  <arg name="joy_dev" default="/dev/input/js1" />
+  <arg name="teleop" default="joy" />
+  <arg name="joy_dev" default="/dev/input/js0" />
 
   <include file="$(find oit_navigation_minibot_middle_01)/launch/include/devices.launch">
     <arg name="use_rviz" value="$(arg use_rviz)" />

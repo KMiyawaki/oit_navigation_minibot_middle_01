@@ -7,10 +7,10 @@
   <node pkg="oit_roboclaw_driver" type="oit_roboclaw_2_wheels.py" name="oit_roboclaw_2_wheels" output="screen">
     <param name="~process_rate" value="20"/>
     <param name="~tread" value="0.26"/>
-    <!-- 100:1 Metal Gearmotor 37Dx73L mm 12V with 64 CPR Encoder -->
-    <!-- Ticks: 102.08 * 64 = 6533.12 -->
+    <!-- 4.8:1 Maxon Gear Head -->
+    <!-- Ticks: 2000 * 4.8 = 9600 -->
     <!-- Wheel: 0.07 * Pi = 0.21991148575128555 -->
-    <param name="~ticks_per_meter" value="29707.952623214947"/>
+    <param name="~ticks_per_meter" value="43653.92724806272"/>
     <param name="~linear_max" value="0.5"/>
     <!--Radians-->
     <param name="~angular_max" value="1.57"/>
