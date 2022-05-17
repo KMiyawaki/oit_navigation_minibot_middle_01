@@ -1,7 +1,7 @@
 # Logitech Attack3
 axis_linear: 1  # Forward/Back
 scale_linear: 0.2
-scale_linear_turbo: 0.8
+scale_linear_turbo: 2.0
 
 axis_angular: 0  # Left/Right
 scale_angular: 1.0

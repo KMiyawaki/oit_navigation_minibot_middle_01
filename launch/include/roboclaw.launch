@@ -6,12 +6,12 @@
   </node>
   <node pkg="oit_roboclaw_driver" type="oit_roboclaw_2_wheels.py" name="oit_roboclaw_2_wheels" output="screen">
     <param name="~process_rate" value="20"/>
-    <param name="~tread" value="0.26"/>
+    <param name="~tread" value="0.207171"/>
     <!-- 4.8:1 Maxon Gear Head -->
-    <!-- Ticks: 2000 * 4.8 = 9600 -->
-    <!-- Wheel: 0.07 * Pi = 0.21991148575128555 -->
-    <param name="~ticks_per_meter" value="43653.92724806272"/>
-    <param name="~linear_max" value="0.5"/>
+    <!-- Ticks: 2000 * 4.8 *2= 19200 -->
+    <!-- Wheel: 0.0856 * Pi = 0.2689203314728625 -->
+    <param name="~ticks_per_meter" value="71109.80046"/>
+    <param name="~linear_max" value="2.0"/>
     <!--Radians-->
     <param name="~angular_max" value="1.57"/>
   </node>
